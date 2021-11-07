@@ -1,0 +1,114 @@
+/* The Code below will apply to all the elements */
+
+* {
+  font-family: Helvitica, Arial, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+/* As the id name suggests */
+
+#heading {
+  font-size: 175%;
+  text-align: center;
+  width: 90%;
+  margin: 10% auto;
+}
+
+/* 'Container' (below this line) contains all the stuff below the main heading within a 'div' */
+
+.container {
+  
+  height: 200px;
+  width: 90%;
+  margin: 100px auto;
+  padding: 0px;
+}
+
+/* The classes below are for the boxes 1,2 and 3 respectively which have seperate 'section' tags of their own */
+.One, .Two, .Three {
+  
+  border: 1px solid black;
+  width: 30%;
+  height: 100%;
+  margin: 1%;
+  float: left;
+  overflow: hidden;
+  background-color: #d3d3d3;
+}
+
+/* Below is the common class for each of the section headings (Colors are the only difference as mentioned ahead) */
+
+.SectionTitle {
+  text-align: center;
+  border: 1px solid black;
+  position: relative;
+  width: 150px;
+  height: 50px;
+  right: -1px;
+  top: -1px;
+  float: right;
+  padding: 15px;
+  font-size: 125%;
+}
+
+.TitleOne{
+  background-color: #CAF4F4;
+}
+.TitleTwo{
+  background-color: #FDE0D9;
+}
+.TitleThree{
+  background-color: #CAEFD1;
+}
+
+ 
+ /* Below is the tag containing the text in the boxes */
+ 
+.Paragraph{
+  padding: 5%;
+  clear: right;
+}
+
+
+
+
+/* Desktop */
+
+@media (min-width: 992px) {
+
+  .One,
+  .Two,
+  .Three {
+    /* Properties covered in base styles (Base style: Covered in - Lecture 23, Part 1: Media Queries (3:35 - 3:41)) */
+  }
+}
+
+/* Tablet */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .One {
+    width: 48%;
+  }
+
+  .Two {
+    width: 48%;
+  }
+
+  .Three {
+    width: 98%;
+  }
+
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
+
+  .One,
+  .Two,
+  .Three {
+    width: 100%;
+    clear: both;
+  }
+}
